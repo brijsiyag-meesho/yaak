@@ -556,6 +556,7 @@ const Menu = forwardRef<Omit<DropdownRef, 'open' | 'isOpen' | 'toggle' | 'items'
                   if (item.hidden) {
                     return null;
                   }
+                  console.log(item);
                   if (item.type === 'separator') {
                     return (
                       <Separator
@@ -581,7 +582,7 @@ const Menu = forwardRef<Omit<DropdownRef, 'open' | 'isOpen' | 'toggle' | 'items'
                       focused={i === selectedIndex}
                       onFocus={handleFocus}
                       onSelect={handleSelect}
-                      key={`item_${item.label}`}
+                      key={`item_${i}_${item.label}`}
                       item={item}
                     />
                   );
