@@ -34,6 +34,7 @@
     "plugins/template-function-1password",
     "plugins/template-function-cookie",
     "plugins/template-function-ctx",
+    "plugins/template-function-dot-env",
     "plugins/template-function-encode",
     "plugins/template-function-fs",
     "plugins/template-function-hash",
@@ -59,6 +60,7 @@
     "crates/yaak-sync",
     "crates/yaak-templates",
     "crates/yaak-ws",
+    "plugins/workspace-action-git-import",
     "src-web"
   ],
   "scripts": {
