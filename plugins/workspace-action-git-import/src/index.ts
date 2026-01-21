@@ -4,7 +4,13 @@ import * as path from 'node:path';
 import * as os from 'node:os';
 import { execSync } from 'node:child_process';
 
-const repoPath = path.join(os.homedir(), 'api-collections');
+const repoPath = path.join(
+  os.homedir(),
+  'Library',
+  'Application Support',
+  'app.yaak.desktop',
+  'api-collections',
+);
 
 // Get the yaak database path (macOS only)
 function getYaakDbPath(): string {
